@@ -270,20 +270,6 @@ input {
   padding-right: 5px;
 }
 
-@media screen and (max-width: 767px) {
-  .nav__menu {
-    position: fixed;
-    background-color: var(--body-color);
-    top: 0;
-    right: -100%;
-    width: 70%;
-    height: 100%;
-    box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
-    padding: 3rem;
-    transition: 0.4s;
-  }
-}
-
 .nav__list {
   display: flex;
   flex-direction: column;
@@ -1156,9 +1142,28 @@ input {
     transition: all 0.7s ease-in;
   }
 
+  .nav__list a {
+    transition: 0.4s ease-in-out;
+  }
+
   .nav__list a:hover {
-    transition: 0.8s ease-in-out;
-    background: black;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    background-color: var(--body-color);
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+    padding: 3rem;
+    transition: 0.4s;
   }
 }
 
