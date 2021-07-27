@@ -458,7 +458,7 @@ input {
 }
 
 .home__info-img {
-  width: 180pxpx;
+  width: 180px;
   transition: var(--img-transition);
 }
 
@@ -1173,7 +1173,4 @@ input {
     padding: 3rem;
     transition: 0.4s;
   }
-}
-
-@media (orentation: landscape) {
 }
